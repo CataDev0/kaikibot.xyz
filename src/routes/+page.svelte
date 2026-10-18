@@ -34,7 +34,7 @@
 		} 
 		else {
 			try {
-				const res = await fetch("https://api.waifu.im/images?IncludedTags=maid&IsNsfw=false&PageSize=4");
+				const res = await fetch("https://cdn.cata.moe/images?IncludedTags=maid&IsNsfw=false&PageSize=4");
 				const json: WaifuImJSON = await res.json();
 
 				if (json.items) {
